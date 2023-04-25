@@ -19,10 +19,6 @@ describe("merge", () => {
         expect(merge([], [])).toEqual([]);
     });
 
-    it("should merge two empty arrays into an empty array", () => {
-        expect(merge([], [])).toEqual([]);
-    });
-
     it("should merge two arrays with one element each", () => {
         expect(merge([1], [2])).toEqual([1, 2]);
         expect(merge([2], [1])).toEqual([1, 2]);
